@@ -8,4 +8,6 @@ RUN apt-get update && \
 
 RUN rm -rf /var/lib/apt/lists/*
 
+COPY ./php.ini /usr/local/etc/php/
+
 EXPOSE 80
