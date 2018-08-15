@@ -6,6 +6,7 @@ services:
     container_name: fuelphp-app
     build: ./docker
     volumes:
-      - "./php:/var/www/html"
+      - "./php:/var/www/html/php"
+      - "./app:/var/www/html/app"
     ports:
       - 8000:80
