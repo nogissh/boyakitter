@@ -4,14 +4,18 @@ class Controller_Home extends Controller {
 
   public function action_index() {
 
-    // sample of Boyaki
-    $data = new stdClass();
-    $data->boyaki = array();
+    // query
+    $query = DB::query('SELECT * FROM boyaki order by id desc');
+    $boyaki = $query->execute()->as_array();
 
-    // content of boyaki
-    $data->boyaki[0] = array();
-    $data->boyaki[0]['title'] = "Uzee";
-    $data->boyaki[0]['text'] = "The summer in 2018 is very hot. Temprature will kill the people. Humans are not fight for alive against temprature because hot is not the thing.";
+    // create object for boyaki contents
+    $data = new stdClass();
+
+    // set content of boyaki
+    $data->boyaki = array();
+    foreach($boyaki as $value) {
+      array_push($data->boyaki, $value);
+    }
 
     // send to View
     return Response::forge(View::forge('home/index', $data));

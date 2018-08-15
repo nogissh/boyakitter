@@ -17,7 +17,17 @@ body {
   padding-bottom: 64px;
   box-sizing: border-box;
 }
+.panel {
+  background-color: white;
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 3px 3px 3px rgb(240, 240, 240);
+  box-sizing: border-box;
+}
+
 .header_bar {
+  overflow: hidden;
   background-color: white;
   width: 100%;
   margin: 0;
@@ -29,16 +39,16 @@ body {
 .header_bar h1 {
   font-size: 24px;
 }
-.panel {
-  background-color: white;
-  width: 100%;
-  padding: 8px;
-  border-radius: 3px;
-  box-shadow: 0px 3px 3px 3px rgb(240, 240, 240);
-  box-sizing: border-box;
+
+.header_bar ul {}
+.header_bar ul li {
+  display: inline-block;
+  text-align:center;
+  margin-right: 16px;
 }
+
 .boyaki {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 .boyaki h1 {
   font-size: 18px;
@@ -52,14 +62,22 @@ body {
 <body>
 <header>
 <div class="header_bar">
+<div style="float: left;">
 <h1>Boyakitter</h1>
+</div>
+<div style="float: right;">
+<ul>
+<li>BOYAKU</li>
+<li>MY BOYAKI</li>
+</ul>
+</div>
 </div>
 </header>
 <div class="Wrapper">
 
 <!-- Title of Boyaki -->
 <div class="boyaki">
-<h1>Feed of Boyaki</h1>
+<h1>Boyakies</h1>
 </div>
 <!-- /Title of Boyaki -->
 
