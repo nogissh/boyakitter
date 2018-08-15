@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  fuelphp-app:
+    container_name: fuelphp-app
+    build: ./docker
+    volumes:
+      - "./php:/var/www/html"
+    ports:
+      - 8000:80
