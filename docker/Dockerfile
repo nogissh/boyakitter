@@ -10,8 +10,11 @@ RUN apt-get update && \
 
 RUN docker-php-ext-install \
       fileinfo \
+      mysqli \
       mbstring \
-      mcrypt
+      mcrypt \
+      pdo \
+      pdo_mysql
 
 RUN rm -rf /var/lib/apt/lists/*
 
