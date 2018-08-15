@@ -4,7 +4,14 @@ RUN apt-get update && \
     apt-get upgrade -y && \ 	
     apt-get install -y \
       git \
-      vim
+      vim \
+      wget \
+      libmcrypt-dev
+
+RUN docker-php-ext-install \
+      fileinfo \
+      mbstring \
+      mcrypt
 
 RUN rm -rf /var/lib/apt/lists/*
 
