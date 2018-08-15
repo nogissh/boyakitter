@@ -3,6 +3,9 @@ return array(
 	'_root_'  => 'welcome/index',  // The default route
 	'_404_'   => 'welcome/404',    // The main 404 route
 
+  // home feed
+  'home' => 'home/index',
+
   // test
   'test' => 'welcome/test',
   'test_array' => 'welcome/test_array',
