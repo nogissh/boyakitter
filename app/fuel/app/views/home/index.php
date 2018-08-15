@@ -63,11 +63,11 @@ body {
 <header>
 <div class="header_bar">
 <div style="float: left;">
-<h1>Boyakitter</h1>
+<a href="/app/public/"><h1>Boyakitter</h1></a>
 </div>
 <div style="float: right;">
 <ul>
-<li>BOYAKU</li>
+<li><a href="/app/public/index.php/post/">BOYAKU</a></li>
 <li>MY BOYAKI</li>
 </ul>
 </div>

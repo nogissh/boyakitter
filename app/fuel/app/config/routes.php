@@ -1,10 +1,13 @@
 <?php
 return array(
-	'_root_'  => 'welcome/index',  // The default route
+	// '_root_'  => 'welcome/index',  // The default route
 	'_404_'   => 'welcome/404',    // The main 404 route
 
   // home feed
-  'home' => 'home/index',
+  '_root_' => 'home/index',
+
+  // post
+  'post' => 'post/index',
 
   // test
   'test' => 'welcome/test',
