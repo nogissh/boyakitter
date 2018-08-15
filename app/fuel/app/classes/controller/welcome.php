@@ -54,4 +54,33 @@ class Controller_Welcome extends Controller
 	{
 		return Response::forge(Presenter::forge('welcome/404'), 404);
 	}
+
+  public function action_test() {
+
+    $data = new stdClass();
+
+    // title
+    $data->head_title = "page for test";
+    $data->body_title = "title of body";
+
+    // contents
+    $data->myname = "Toshiki Ohnogi";
+    $data->place = "Yokohama";
+    $data->age = 24;
+
+    // return
+    return Response::forge(View::forge('welcome/test', $data));
+  }
+
+  public function action_test_array() {
+    $data = array();
+    $data['name'] = 'nogi';
+    return Response::forge(View::forge('welcome/test_array', $data));
+  }
+
+  public function action_test_object() {
+    $data = new stdClass();
+    $data->name = 'nogi';
+    return Response::forge(View::forge('welcome/test_object', $data));
+  }
 }
