@@ -95,11 +95,11 @@ body {
 <!-- /Title -->
 
 <!-- Input -->
-<form action="/app/public/index.php/completed/" method="post">
+<form action="completed" method="post">
 <div class="panel post-boyaki">
-<input type="text" placeholder="Title"/>
-<textarea placeholder="Your Boyaki"></textarea>
-<button>BOYAKU</button>
+<input type="text" name="boyaki_title" placeholder="Title"/>
+<textarea name="boyaki_text" placeholder="Your Boyaki"></textarea>
+<button type="submit">BOYAKU</button>
 </div>
 </form>
 <!-- /Input -->

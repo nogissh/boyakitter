@@ -8,6 +8,7 @@ return array(
 
   // post
   'post' => 'post/index',
+  'completed' => 'post/completed',
 
   // test
   'test' => 'welcome/test',
